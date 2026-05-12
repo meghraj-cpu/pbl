@@ -196,17 +196,7 @@ Encoder and decoder design
 Simulation results
 
 Leaf cell design
-
-
-Team Members
-
-Manvith – 4SO24EC066
-
-Joel Anston Dsouza – 4SO24EC064
-
-Manish – 4SO24EC049
-
-Meghraj Poojary – 4SO24EC068
+l
 
 
 Future Improvements
