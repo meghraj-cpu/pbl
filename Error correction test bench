@@ -1,0 +1,32 @@
+
+
+module error_corrector_tb;
+
+reg data_in;
+reg error;
+wire data_out;
+
+error_corrector uut(
+    .data_in(data_in),
+    .error(error),
+    .data_out(data_out)
+);
+
+initial begin
+
+    data_in = 0; error = 0;
+    #10;
+
+    data_in = 1; error = 0;
+    #10;
+
+    data_in = 1; error = 1;
+    #10;
+
+    data_in = 0; error = 1;
+    #10;
+
+    $finish;
+end
+
+endmodule
