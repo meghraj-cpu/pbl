@@ -1,0 +1,9 @@
+module error_corrector(
+    input data_in,
+    input error,
+    output data_out
+);
+
+assign data_out = data_in ^ error;
+
+endmodule
