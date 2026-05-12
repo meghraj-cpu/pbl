@@ -1,0 +1,33 @@
+
+
+module syndrome_calc_tb;
+
+reg p, d1, d2, d3;
+wire syndrome;
+
+syndrome_calc uut(
+    .p(p),
+    .d1(d1),
+    .d2(d2),
+    .d3(d3),
+    .syndrome(syndrome)
+);
+
+initial begin
+
+    p=0; d1=0; d2=0; d3=0;
+    #10;
+
+    p=1; d1=0; d2=1; d3=0;
+    #10;
+
+    p=1; d1=1; d2=1; d3=0;
+    #10;
+
+    p=0; d1=1; d2=1; d3=1;
+    #10;
+
+    $finish;
+end
+
+endmodule
